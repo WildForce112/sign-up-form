@@ -1,0 +1,101 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fonts/FiraSans-Medium.woff2') format('woff2'),
+        url('fonts/FiraSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fonts/FiraSans-Regular.woff2') format('woff2'),
+        url('fonts/FiraSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Book';
+    src: url('fonts/FiraSans-Book.woff2') format('woff2'),
+        url('fonts/FiraSans-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fonts/FiraSans-MediumItalic.woff2') format('woff2'),
+        url('fonts/FiraSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans Book';
+    src: url('fonts/FiraSans-BookItalic.woff2') format('woff2'),
+        url('fonts/FiraSans-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+  font-size: 20px;
+}
+em{
+  font-size: inherit;
+}
+body>:first-child{
+  display: flex;
+}
+
+.left-side{
+  
+  /* background-size: cover; */
+  /* background: url("/img/photo-1585202900225-6d3ac20a6962.avif"); */
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.right-side{
+  background-color: aqua;
+  /* box-sizing: border-box; */
+  padding: 20vh 40px;
+}
+
+.right-side p{
+  width: 70%;
+  font-size: 1.35rem;
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  background-color: white;
+}
+
+.form-container{
+  display: flex;
+}
+
+.left-form, .right-form{
+  display: flex;
+  flex-direction: column;
+  /* align-items:; */
+}
+
