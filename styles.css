@@ -55,7 +55,10 @@
 }
 
 * {
-  font-size: 20px;
+  --gray-color: #F9FAFB;
+  --light-color: #E5E7EB;
+  --LEAF-GREEN: #596D48;
+  font-size: calc(22px + 0.5vw);
 }
 em{
   font-size: inherit;
@@ -63,39 +66,128 @@ em{
 body>:first-child{
   display: flex;
 }
+a{
+  color: inherit;
+  font-size: inherit;
+}
 
 .left-side{
-  
-  /* background-size: cover; */
-  /* background: url("/img/photo-1585202900225-6d3ac20a6962.avif"); */
-  background-color: gray;
+  background: no-repeat url("/img/photo-1585202900225-6d3ac20a6962.avif");
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  position: relative;
+}
+
+.logo{
+  position: absolute;
+  top: 30vh;
+  display: flex;
   justify-content: center;
-  width: 60%;
+  align-items: center;
+  width: 100%;
+  height: 26vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Norse', sans-serif;
+  font-size: 4rem;
+  color: white;
+}
+.logo img{
+  height: 80%;
+}
+
+.left-side>:last-child{
+  position: absolute;
+  bottom: 2vh;
+  color: var(--light-color);
+  font-size: 0.5rem;
 }
 
 .right-side{
-  background-color: aqua;
-  /* box-sizing: border-box; */
-  padding: 20vh 40px;
+  --padding-left: 4vw;
+  background-color: var(--gray-color);
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  max-width: 60vw;
 }
 
-.right-side p{
-  width: 70%;
-  font-size: 1.35rem;
+.right-side>:first-child{
   font-family: 'Fira Sans';
   font-weight: 500;
-  background-color: white;
+  padding-left: var(--padding-left);
+  padding-right: 10vw;
+  padding-bottom: 5vh;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .form-container{
+  background-color: white;
   display: flex;
+  flex-direction: column;
+  padding-left: var(--padding-left);
+  padding-bottom: 5vh;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container>:first-child{
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  font-size: inherit;
+}
+
+.form-container>:first-child + div{
+  display: flex;
+  gap: 5vw;
 }
 
 .left-form, .right-form{
   display: flex;
   flex-direction: column;
-  /* align-items:; */
+}
+.left-form label, .right-form label{
+  font-family: 'Fira Sans Book', sans-serif;
+  font-weight: bold;
+  font-size: 0.5rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3px;
+}
+.left-form input, .right-form input{
+  margin-bottom: 2vh;
+  font-size: 0.5rem;
+  padding: calc(10px + 0.05vw) calc(16px + 0.05vw);
+  border-style: solid;
+  border-color: var(--light-color);
+  border-radius: calc(4px + 0.05vw);
+  width: 20vw;
 }
 
+.right-side button{
+  width: 18vw;
+  margin: 5vh 0 5vh var(--padding-left);
+  background-color: var(--LEAF-GREEN);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 3vh 0;
+  border-style: hidden;
+  border-radius: calc(8px + 0.05vw);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.right-side form>:last-child{
+  margin: 0 0 5vh var(--padding-left);
+  font-size: 0.7rem;
+}
+.right-side form>:last-child a{
+  color: var(--LEAF-GREEN);
+  text-decoration: none;
+  font-weight: bold;
+}
