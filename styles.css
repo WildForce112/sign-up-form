@@ -72,7 +72,7 @@ a{
 }
 
 .left-side{
-  background: no-repeat url("../img/photo-1585202900225-6d3ac20a6962.avif");
+  background: no-repeat url("./img/photo-1585202900225-6d3ac20a6962.avif");
   background-size: cover;
   background-position: center;
   display: flex;
