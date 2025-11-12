@@ -125,7 +125,6 @@ a{
 form{
   display: flex;
   flex-direction: column;
-  
 }
 
 .form-container{
@@ -145,28 +144,39 @@ form{
 
 .form-container>:first-child + div{
   display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.top, .middle, .bottom{
+  display: flex;
   gap: 5vw;
 }
 
-.left-form, .right-form{
+.top div, .middle div, .bottom div{
   display: flex;
   flex-direction: column;
 }
-.left-form label, .right-form label{
+.top label, .middle label, .bottom label{
   font-family: 'Fira Sans Book', sans-serif;
   font-weight: bold;
   font-size: 0.5rem;
   letter-spacing: 0.1rem;
   margin-bottom: 3px;
 }
-.left-form input, .right-form input{
+.top input, .middle input, .bottom input{
   margin-bottom: 2vh;
   font-size: 0.5rem;
   padding: calc(10px + 0.05vw) calc(16px + 0.05vw);
   border-style: solid;
   border-color: var(--light-color);
   border-radius: calc(4px + 0.05vw);
-  width: 20vw;
+  width: 18vw;
+}
+.right-side input:focus{
+  outline: none;
+  border-color: rgb(50, 50, 255);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .right-side button{
