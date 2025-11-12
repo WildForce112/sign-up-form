@@ -178,6 +178,9 @@ form{
   border-color: rgb(50, 50, 255);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.bottom input:invalid{
+  border-color: rgb(205, 0, 0);
+}
 
 .right-side button{
   width: 18vw;
